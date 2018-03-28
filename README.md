@@ -11,5 +11,5 @@ docker build . -t gst-build-ubuntu
 ## Running
 
 ```
-docker run -it gst-build-ubuntu
+docker run -it gst-build-ubuntu /opt/gstreamer/gst-uninstalled.py gst-launch-1.0 videotestsrc ! fakesink
 ```
