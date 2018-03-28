@@ -8,5 +8,5 @@ RUN apt-get update && apt-get -q -y build-dep gstreamer1.0-plugins-base gstreame
 
 WORKDIR /root
 ADD . /root
-RUN openh264-build.sh
-RUN gst-build.sh
+RUN /root/openh264-build.sh
+RUN /root/gst-build.sh
