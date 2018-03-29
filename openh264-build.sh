@@ -1,5 +1,6 @@
 #!/bin/bash
 # Copyright 2017, Florent Thiery
+apt-get install nasm
 git clone https://github.com/cisco/openh264
 cd openh264
-make && sudo make install
+make && make PREFIX="/usr" install
